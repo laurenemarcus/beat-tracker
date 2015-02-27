@@ -10,3 +10,13 @@
 body {
   background-color: #BBCD67;
 }
+
+.btn {
+  background-color: #697B15;
+  border-color: #91A437;
+}
+
+.form-control {
+  background-color: #BBCD67;
+  border-color: #697B15;
+}
