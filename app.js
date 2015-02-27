@@ -12,4 +12,10 @@ beatAssignment.config(function($stateProvider) {
     templateUrl: "partials/beats.reporters.html",
     controller: "ReportersCtrl"
   });
+
+  $stateProvider.state('beats.reporters.detail', {
+    url: "/:reporterId",
+    templateUrl: "partials/beats.reporters.detail.html",
+    controller: "ReportersCtrl"
+  });
 });
