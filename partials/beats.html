@@ -11,7 +11,7 @@
     <h3>List of beats:</h3>
     <ul>
       <li ng-repeat="item in beats">
-        {{item.beatTitle}}
+        <a ui-sref="beats.reporters({ beatId: item.id})">{{item.beatTitle}}</a>
       </li>
     </ul>
   </div>
