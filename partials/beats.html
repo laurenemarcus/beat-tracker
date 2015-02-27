@@ -1,0 +1,20 @@
+<div class="col-md-12">
+  <h3>Add a New Beat</h3>
+  <form ng-submit="BeatsFactory.addBeat()" class="form-inline" role="form">
+    <div class="form-group">
+      <input type="text" ng-model="BeatsFactory.beatTitle" class="form-control" placeholder="Enter a beat name" autofocus required>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+
+  <div ng-show="beats.length">
+    <h3>List of beats:</h3>
+    <ul>
+      <li ng-repeat="item in beats">
+        {{item.beatTitle}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div ui-view></div>

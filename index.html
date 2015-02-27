@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" ng-app"beatAssignment">
+<html lang="en" ng-app="beatAssignment">
   <head>
     <meta charset="UTF-8">
     <title>Beat Tracker</title>
     <script src="lib/angular.js"></script>
     <script src="lib/angular-ui-router.js"></script>
     <script src="app.js"></script>
+    <script src="services/BeatsFactory.js"></script>
+    <script src="controllers/BeatsController.js"></script>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="container">
+      <h1>News Beat Tracker</h1>
       <div ui-view></div>
     </div>
   </body>
