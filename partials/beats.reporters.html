@@ -1,5 +1,5 @@
-
-  <h3>Add a Reporter to the {{ beat.beatTitle }} Beat:</h3>
+<div class="well">
+  <h4>Add a Reporter to the {{ beat.beatTitle }} Beat</h4>
   <form ng-submit="addReporter()" class="form-inline" role="form" id="reporter">
     <div class="form-group">
       <input type="text" ng-model="reporterName" class="form-control" placeholder="Full Name" required>
@@ -12,14 +12,17 @@
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
+</div>
 
 <div ng-show="beat.reporters.length">
-  <h3>Reporters for {{ beat.beatTitle }}</h3>
-  <ul>
-    <li ng-repeat="item in beat.reporters">
-        <a ui-sref="beats.reporters.detail({ reporterId: item.id})">{{item.reporterName}}</a>
-    </li>
-  </ul>
+  <div class="well">
+    <h4>Reporters for {{ beat.beatTitle }}</h4>
+    <ul>
+      <li ng-repeat="item in beat.reporters">
+          <a ui-sref="beats.reporters.detail({ reporterId: item.id})">{{item.reporterName}}</a>
+      </li>
+    </ul>
+  </div>
 </div>
 
 <div ui-view></div>

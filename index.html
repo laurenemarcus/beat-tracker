@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="beatAssignment">
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
     <title>Beat Tracker</title>
     <script src="lib/angular.js"></script>
@@ -11,11 +12,14 @@
     <script src="controllers/BeatsController.js"></script>
     <script src="controllers/ReportersController.js"></script>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="container">
-      <div class="col-md-12">
-      <h1>News Beat Tracker</h1>
+      <div class="col-md-6 font">
+      <div class="well">
+        <h1>News Beat Tracker</h1>
+      </div>
       <div ui-view></div>
     </div>
     </div>
